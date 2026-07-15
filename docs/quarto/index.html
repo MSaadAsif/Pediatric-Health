@@ -86,6 +86,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#baseline-descriptive-characteristics" id="toc-baseline-descriptive-characteristics" class="nav-link" data-scroll-target="#baseline-descriptive-characteristics">Baseline Descriptive Characteristics</a></li>
   <li><a href="#disease-by-age-group-analysis" id="toc-disease-by-age-group-analysis" class="nav-link" data-scroll-target="#disease-by-age-group-analysis">Disease by Age Group Analysis</a></li>
   <li><a href="#uti-status-by-age-group-analysis" id="toc-uti-status-by-age-group-analysis" class="nav-link" data-scroll-target="#uti-status-by-age-group-analysis">UTI Status by Age Group Analysis</a></li>
+  <li><a href="#psychosocial-heads-ed-screening-by-age-group-analysis" id="toc-psychosocial-heads-ed-screening-by-age-group-analysis" class="nav-link" data-scroll-target="#psychosocial-heads-ed-screening-by-age-group-analysis">Psychosocial (HEADS-ED) Screening by Age Group Analysis</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
@@ -134,7 +135,13 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Comparison across defined age categories (3–5, 6–11, 12–18 years)</p></li>
 <li><p>Chi-square (χ²) tests performed for group differences, with Fisher’s exact test used automatically in place of chi-square wherever expected cell counts were below 5 (e.g., for rare events such as Tuberculosis and Convulsions)</p></li>
 <li><p>95% confidence intervals reported alongside all proportions</p></li>
+<li><p>Visual impairment (Snellen-based, either eye) is included in this comparison</p></li>
 <li><p>Note: 11 participants fall outside the 3–18 year range used for age-group stratification and are therefore not included in this table (1 participant’s age was not recorded; 1 was aged 1 year; 9 were aged 19–20 years), though they are retained in the overall study sample (N = 1,912)</p></li>
+</ul></li>
+<li><p><strong>Psychosocial (HEADS-ED) by Age Group Table:</strong></p>
+<ul>
+<li><p>Same age-group comparison, same automatic test selection and 95% confidence intervals, applied to the psychosocial/social-factor variables (family relationships, school attendance, grades, peer relationships, substance use, suicidal ideation, and mental health support status)</p></li>
+<li><p>Three related variables (mood, intrusive thoughts, and trouble with parents/police/school) are not included pending a data-mapping check with the study team - see the note under that table</p></li>
 </ul></li>
 </ul></li>
 <li><p><strong>Software:</strong> All statistical analyses were performed using R Statistical Language (Version 4.5.1; R Foundation for Statistical Computing, Vienna, Austria).</p></li>
@@ -144,23 +151,23 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="baseline-descriptive-characteristics">Baseline Descriptive Characteristics</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fiwabrsyfn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#fiwabrsyfn table {
+<div id="iwbrexllda" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#iwbrexllda table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#fiwabrsyfn thead, #fiwabrsyfn tbody, #fiwabrsyfn tfoot, #fiwabrsyfn tr, #fiwabrsyfn td, #fiwabrsyfn th {
+#iwbrexllda thead, #iwbrexllda tbody, #iwbrexllda tfoot, #iwbrexllda tr, #iwbrexllda td, #iwbrexllda th {
   border-style: none;
 }
 
-#fiwabrsyfn p {
+#iwbrexllda p {
   margin: 0;
   padding: 0;
 }
 
-#fiwabrsyfn .gt_table {
+#iwbrexllda .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -186,12 +193,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_caption {
+#iwbrexllda .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#fiwabrsyfn .gt_title {
+#iwbrexllda .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -203,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#fiwabrsyfn .gt_subtitle {
+#iwbrexllda .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -215,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#fiwabrsyfn .gt_heading {
+#iwbrexllda .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -227,13 +234,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_bottom_border {
+#iwbrexllda .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_col_headings {
+#iwbrexllda .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -248,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_col_heading {
+#iwbrexllda .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -268,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#fiwabrsyfn .gt_column_spanner_outer {
+#iwbrexllda .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -280,15 +287,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#fiwabrsyfn .gt_column_spanner_outer:first-child {
+#iwbrexllda .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fiwabrsyfn .gt_column_spanner_outer:last-child {
+#iwbrexllda .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fiwabrsyfn .gt_column_spanner {
+#iwbrexllda .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -300,11 +307,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#fiwabrsyfn .gt_spanner_row {
+#iwbrexllda .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#fiwabrsyfn .gt_group_heading {
+#iwbrexllda .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -330,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#fiwabrsyfn .gt_empty_group_heading {
+#iwbrexllda .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -345,15 +352,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#fiwabrsyfn .gt_from_md > :first-child {
+#iwbrexllda .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fiwabrsyfn .gt_from_md > :last-child {
+#iwbrexllda .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fiwabrsyfn .gt_row {
+#iwbrexllda .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -372,7 +379,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#fiwabrsyfn .gt_stub {
+#iwbrexllda .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -385,7 +392,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fiwabrsyfn .gt_stub_row_group {
+#iwbrexllda .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -399,15 +406,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#fiwabrsyfn .gt_row_group_first td {
+#iwbrexllda .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#fiwabrsyfn .gt_row_group_first th {
+#iwbrexllda .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#fiwabrsyfn .gt_summary_row {
+#iwbrexllda .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -417,16 +424,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fiwabrsyfn .gt_first_summary_row {
+#iwbrexllda .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_first_summary_row.thick {
+#iwbrexllda .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#fiwabrsyfn .gt_last_summary_row {
+#iwbrexllda .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -436,7 +443,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_grand_summary_row {
+#iwbrexllda .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -446,7 +453,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fiwabrsyfn .gt_first_grand_summary_row {
+#iwbrexllda .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -456,7 +463,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_last_grand_summary_row_top {
+#iwbrexllda .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -466,11 +473,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_striped {
+#iwbrexllda .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fiwabrsyfn .gt_table_body {
+#iwbrexllda .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -479,7 +486,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_footnotes {
+#iwbrexllda .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -493,7 +500,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_footnote {
+#iwbrexllda .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -502,7 +509,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fiwabrsyfn .gt_sourcenotes {
+#iwbrexllda .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -516,7 +523,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#fiwabrsyfn .gt_sourcenote {
+#iwbrexllda .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -524,72 +531,72 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#fiwabrsyfn .gt_left {
+#iwbrexllda .gt_left {
   text-align: left;
 }
 
-#fiwabrsyfn .gt_center {
+#iwbrexllda .gt_center {
   text-align: center;
 }
 
-#fiwabrsyfn .gt_right {
+#iwbrexllda .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fiwabrsyfn .gt_font_normal {
+#iwbrexllda .gt_font_normal {
   font-weight: normal;
 }
 
-#fiwabrsyfn .gt_font_bold {
+#iwbrexllda .gt_font_bold {
   font-weight: bold;
 }
 
-#fiwabrsyfn .gt_font_italic {
+#iwbrexllda .gt_font_italic {
   font-style: italic;
 }
 
-#fiwabrsyfn .gt_super {
+#iwbrexllda .gt_super {
   font-size: 65%;
 }
 
-#fiwabrsyfn .gt_footnote_marks {
+#iwbrexllda .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#fiwabrsyfn .gt_asterisk {
+#iwbrexllda .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#fiwabrsyfn .gt_indent_1 {
+#iwbrexllda .gt_indent_1 {
   text-indent: 5px;
 }
 
-#fiwabrsyfn .gt_indent_2 {
+#iwbrexllda .gt_indent_2 {
   text-indent: 10px;
 }
 
-#fiwabrsyfn .gt_indent_3 {
+#iwbrexllda .gt_indent_3 {
   text-indent: 15px;
 }
 
-#fiwabrsyfn .gt_indent_4 {
+#iwbrexllda .gt_indent_4 {
   text-indent: 20px;
 }
 
-#fiwabrsyfn .gt_indent_5 {
+#iwbrexllda .gt_indent_5 {
   text-indent: 25px;
 }
 
-#fiwabrsyfn .katex-display {
+#iwbrexllda .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#fiwabrsyfn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#iwbrexllda div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1159,1587 +1166,1658 @@ ul.task-list li input[type="checkbox"] {
 <td class="gt_row gt_center" headers="stat_0">84 (4.4%)</td>
 </tr>
 <tr class="odd">
+<td class="gt_row gt_left" headers="label">Right Eye Vision (Snellen Denominator)</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;5</td>
+<td class="gt_row gt_center" headers="stat_0">14 (0.7%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;6</td>
+<td class="gt_row gt_center" headers="stat_0">1,890 (99%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;9</td>
+<td class="gt_row gt_center" headers="stat_0">2 (0.1%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;10</td>
+<td class="gt_row gt_center" headers="stat_0">1 (&lt;0.1%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Left Eye Vision (Snellen Denominator)</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;5</td>
+<td class="gt_row gt_center" headers="stat_0">207 (11%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;6</td>
+<td class="gt_row gt_center" headers="stat_0">1,249 (65%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;8</td>
+<td class="gt_row gt_center" headers="stat_0">1 (&lt;0.1%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;9</td>
+<td class="gt_row gt_center" headers="stat_0">362 (19%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;12</td>
+<td class="gt_row gt_center" headers="stat_0">75 (3.9%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;18</td>
+<td class="gt_row gt_center" headers="stat_0">8 (0.4%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;24</td>
+<td class="gt_row gt_center" headers="stat_0">2 (0.1%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;36</td>
+<td class="gt_row gt_center" headers="stat_0">3 (0.2%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Visual Impairment (Either Eye)</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Impaired</td>
+<td class="gt_row gt_center" headers="stat_0">89 (4.7%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
+<td class="gt_row gt_center" headers="stat_0">1,818 (95%)</td>
+</tr>
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Clinical Anemia (Pallor)</td>
 <td class="gt_row gt_center" headers="stat_0">1,150 (60%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Clubbing Present</td>
 <td class="gt_row gt_center" headers="stat_0">10 (0.5%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Jaundice Present</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Enlarged Lymph Nodes</td>
 <td class="gt_row gt_center" headers="stat_0">27 (1.4%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Peripheral Edema Present</td>
 <td class="gt_row gt_center" headers="stat_0">6 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Rashes Present</td>
 <td class="gt_row gt_center" headers="stat_0">30 (1.6%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Ear: Normal</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">1,815 (95%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">97 (5.1%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Ear: Red and Bulging</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,907 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Ear: Perforated</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">4 (0.2%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,908 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Ear: Discharge</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">10 (0.5%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,902 (99%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Ear: Wax</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">98 (5.1%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,814 (95%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Throat: Normal</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">1,853 (97%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">59 (3.1%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Throat: Red/Inflamed</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">42 (2.2%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,870 (98%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Throat: Enlarged Tonsils</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">29 (1.5%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,883 (98%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Throat: Pus Points</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">4 (0.2%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,908 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Nose: Normal</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">1,897 (99%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">15 (0.8%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Nose: DNS (Deviated Nasal Septum)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">7 (0.4%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,905 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Nose: Discharge/Bleeding</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">8 (0.4%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,904 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Respiratory Examination (Overall)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ab-normal</td>
 <td class="gt_row gt_center" headers="stat_0">2 (0.1%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">1,901 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">General Appearance (Well vs. Unwell)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unwell</td>
 <td class="gt_row gt_center" headers="stat_0">15 (0.8%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Well</td>
 <td class="gt_row gt_center" headers="stat_0">1,894 (99%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Chest AP Diameter/Shape</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal chest shape, with no visible deformities</td>
 <td class="gt_row gt_center" headers="stat_0">2 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Respiratory Movement Symmetry</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">2 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Chest Wall: Lumps/Bumps</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">2 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Chest: Tenderness on Palpation</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">2 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Chest Wall Expansion</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">2 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Chest Percussion Findings</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">2 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Breath Sounds</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Vesicular</td>
 <td class="gt_row gt_center" headers="stat_0">2 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Added Sounds (Crackles/Wheeze)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Wheeze</td>
 <td class="gt_row gt_center" headers="stat_0">2 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Cardiovascular Examination (Overall)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ab-normal</td>
 <td class="gt_row gt_center" headers="stat_0">13 (0.7%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">1,895 (99%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Precordial Bulge Present</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">13 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Pectus Carinatum/Excavatum</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">13 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Cardiac: Scars Present</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">13 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Visible Cardiac Impulse</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">13 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Signs of Increased Work of Breathing</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">13 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Peripheral Pulses (Radial/Brachial)</td>
 <td class="gt_row gt_center" headers="stat_0">10 (77%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Apex Beat Position</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">13 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Cardiac Murmurs Present</td>
 <td class="gt_row gt_center" headers="stat_0">9 (69%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Abdominal Examination (Overall)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ab-Normal</td>
 <td class="gt_row gt_center" headers="stat_0">23 (1.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">1,886 (99%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Abdomen: Scars Present</td>
 <td class="gt_row gt_center" headers="stat_0">2 (8.7%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Abdominal Wall: Skin Abnormalities/Veins/Hemangiomas</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">22 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Protrusions (Hernia/Diastasis Recti)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">22 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Abdominal Tenderness</td>
 <td class="gt_row gt_center" headers="stat_0">20 (91%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Abdominal Guarding</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">22 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Hepatomegaly Present</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">22 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Splenomegaly Present</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">22 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Enlarged Kidneys Palpable</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">22 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Ascites Present</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">22 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Bowel Sounds</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Absent</td>
 <td class="gt_row gt_center" headers="stat_0">1 (4.5%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Present</td>
 <td class="gt_row gt_center" headers="stat_0">21 (95%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Gait Examination (Overall)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ab-Normal</td>
 <td class="gt_row gt_center" headers="stat_0">2 (0.1%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">1,907 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Gait: Antalgic (Pain-related)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">1 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Gait: Circumduction</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">1 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Gait: Spastic</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">1 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Gait: Ataxic</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">1 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Gait: Trendelenburg's</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">1 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Gait: Toe Walking</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">1 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Gait: Stepping (High Steppage)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">1 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Gait: Clumsy with Frequent Falls</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Yes</td>
 <td class="gt_row gt_center" headers="stat_0">1 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">CNS Examination (Overall)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">1,909 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Muscle Hypertrophy</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">2 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Seizure Activity Observed</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">1 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Muscle Wasting</td>
 <td class="gt_row gt_center" headers="stat_0">0 (NA%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Chorea (Involuntary Movements)</td>
 <td class="gt_row gt_center" headers="stat_0">0 (NA%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Fasciculations</td>
 <td class="gt_row gt_center" headers="stat_0">0 (NA%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Tremor (Postural/Intention/Resting)</td>
 <td class="gt_row gt_center" headers="stat_0">0 (NA%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Athetosis (Slow Writhing Movements)</td>
 <td class="gt_row gt_center" headers="stat_0">0 (NA%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Dystonia</td>
 <td class="gt_row gt_center" headers="stat_0">0 (NA%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Muscular Power/Strength</td>
 <td class="gt_row gt_center" headers="stat_0">0 (NA%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Muscle Tone</td>
 <td class="gt_row gt_center" headers="stat_0">0 (NA%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Deep Tendon Reflexes</td>
 <td class="gt_row gt_center" headers="stat_0">0 (NA%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Tooth Brushing Frequency</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Before bed</td>
 <td class="gt_row gt_center" headers="stat_0">40 (2.1%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Every time I eat</td>
 <td class="gt_row gt_center" headers="stat_0">34 (1.8%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;In the morning</td>
 <td class="gt_row gt_center" headers="stat_0">1,081 (57%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Never</td>
 <td class="gt_row gt_center" headers="stat_0">266 (14%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Twice day (includes and morning before bed)</td>
 <td class="gt_row gt_center" headers="stat_0">488 (26%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Primary Teeth Cleaning Method</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Brush/paste</td>
 <td class="gt_row gt_center" headers="stat_0">1,593 (98%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Dental floss</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Others</td>
 <td class="gt_row gt_center" headers="stat_0">8 (0.5%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Traditional instrument</td>
 <td class="gt_row gt_center" headers="stat_0">12 (0.7%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Water only</td>
 <td class="gt_row gt_center" headers="stat_0">3 (0.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Has a Regular Dentist</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Do not know</td>
 <td class="gt_row gt_center" headers="stat_0">42 (2.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">1,693 (93%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Yes</td>
 <td class="gt_row gt_center" headers="stat_0">84 (4.6%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Frequency of Dental Professional Visits</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;About once a year for checkup or treatment</td>
 <td class="gt_row gt_center" headers="stat_0">7 (0.4%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Less than once a year for checkup or treatment</td>
 <td class="gt_row gt_center" headers="stat_0">14 (0.8%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;More than once a year for checkups or treatments</td>
 <td class="gt_row gt_center" headers="stat_0">14 (0.8%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Never</td>
 <td class="gt_row gt_center" headers="stat_0">1,231 (68%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Only for emergency care</td>
 <td class="gt_row gt_center" headers="stat_0">553 (30%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Ever Been to a Dentist</td>
 <td class="gt_row gt_center" headers="stat_0">18 (20%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Aware of Bad Oral Hygiene Effects</td>
 <td class="gt_row gt_center" headers="stat_0">732 (40%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: No Symptoms/Normal</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">809 (42%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,103 (58%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: Toothache</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">135 (7.1%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,777 (93%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: Tooth Sensitivity (Hot/Cold)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">54 (2.8%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,858 (97%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: Pain Around Jaw Joints</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">16 (0.8%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,896 (99%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: Bleeding Gums While Brushing</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">38 (2.0%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,874 (98%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: Persistent Dry Mouth</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,907 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: Persistent Bad Breath (Halitosis)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">33 (1.7%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,879 (98%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: White Patch on Tongue</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,907 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: Hole in Teeth (Decay)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">490 (26%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,422 (74%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: Persistent Ulcers</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,907 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: Excessive Bleeding Gums</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">7 (0.4%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,905 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: Loosening of Teeth</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">19 (1.0%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,893 (99%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: Swelling Around the Neck</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">6 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,906 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: Severe Mouth Pain at Night</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">2 (0.1%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,910 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: Severe Tooth Pain at Night</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,907 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: Pain in Jaw(s)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">3 (0.2%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,909 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: Unhappy with Teeth Appearance</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">23 (1.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,889 (99%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: Dental Caries (Decay)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">678 (35%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,234 (65%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral: Aphthous Ulcers</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">18 (0.9%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,894 (99%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral: Other Symptoms (Specify)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">98 (5.1%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,814 (95%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral Exam: Pain</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">8 (0.4%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,904 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral Exam: Bleeding Gums</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,907 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral Exam: Loosening of Teeth</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">3 (0.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,909 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral Exam: Severe Tooth Pain at Night</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">23 (1.2%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,889 (99%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral Exam: Dental Caries (Decay)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">42 (2.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,870 (98%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Oral Exam: Stains/Plaque</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">20 (1.0%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,892 (99%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Oral Exam: Normal</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">22 (1.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,890 (99%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Speech Delay</td>
 <td class="gt_row gt_center" headers="stat_0">58 (3.0%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Autism/Developmental Disability</td>
 <td class="gt_row gt_center" headers="stat_0">9 (0.5%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Prenatal Alcohol Exposure (FASD)</td>
 <td class="gt_row gt_center" headers="stat_0">11 (0.6%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Family Relationships</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Chaotic / Dysfunctional</td>
 <td class="gt_row gt_center" headers="stat_0">7 (0.4%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Conflicts</td>
 <td class="gt_row gt_center" headers="stat_0">61 (3.2%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Supportive</td>
 <td class="gt_row gt_center" headers="stat_0">1,840 (96%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">School Attendance Pattern</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Failing / not attending</td>
 <td class="gt_row gt_center" headers="stat_0">9 (0.5%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Grades dropping / or absenteeism</td>
 <td class="gt_row gt_center" headers="stat_0">43 (2.3%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;On track</td>
 <td class="gt_row gt_center" headers="stat_0">1,856 (97%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Academic Performance (Grades)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Failing / not attending</td>
 <td class="gt_row gt_center" headers="stat_0">22 (1.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Grades dropping / or absenteeism</td>
 <td class="gt_row gt_center" headers="stat_0">100 (5.2%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;On track</td>
 <td class="gt_row gt_center" headers="stat_0">1,787 (94%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Peer Relationships</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Increasingly to fully withdrawn / significant peer conflicts</td>
 <td class="gt_row gt_center" headers="stat_0">8 (0.4%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
 <td class="gt_row gt_center" headers="stat_0">1,876 (98%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Reduction in activities / increased peer conflicts</td>
 <td class="gt_row gt_center" headers="stat_0">25 (1.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Activities for Fun / Bullying</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Increasingly to fully withdrawn / significant peer conflicts</td>
 <td class="gt_row gt_center" headers="stat_0">3 (0.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal Activities</td>
 <td class="gt_row gt_center" headers="stat_0">1,874 (98%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Reduction in activities / increased peer conflicts</td>
 <td class="gt_row gt_center" headers="stat_0">31 (1.6%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Drug/Alcohol Use Frequency</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Frequent / daily</td>
 <td class="gt_row gt_center" headers="stat_0">2 (0.1%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No or infrequent</td>
 <td class="gt_row gt_center" headers="stat_0">122 (6.4%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Not Applicable</td>
 <td class="gt_row gt_center" headers="stat_0">1,780 (93%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Occasional</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Suicidal Ideation Level</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ideation</td>
 <td class="gt_row gt_center" headers="stat_0">15 (0.8%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No thoughts</td>
 <td class="gt_row gt_center" headers="stat_0">460 (24%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Not Applicable</td>
 <td class="gt_row gt_center" headers="stat_0">1,427 (75%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Plan or gesture</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Suicidal Thoughts Changed Recently</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
 <td class="gt_row gt_center" headers="stat_0">158 (8.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Not Applicable</td>
 <td class="gt_row gt_center" headers="stat_0">1,745 (91%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Yes</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Current Mood/Feelings</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Mildly anxious / sad / acting out</td>
 <td class="gt_row gt_center" headers="stat_0">3 (75%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Moderately anxious / sad / acting out</td>
 <td class="gt_row gt_center" headers="stat_0">1 (25%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Intrusive/Obsessive Thoughts</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Mildly anxious / sad / acting out</td>
 <td class="gt_row gt_center" headers="stat_0">3 (75%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Moderately anxious / sad / acting out</td>
 <td class="gt_row gt_center" headers="stat_0">1 (25%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Behavioral Problems (Parents/Police/School)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Mildly anxious / sad / acting out</td>
 <td class="gt_row gt_center" headers="stat_0">83 (4.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Moderately anxious / sad / acting out</td>
 <td class="gt_row gt_center" headers="stat_0">9 (0.5%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Not Applicable</td>
 <td class="gt_row gt_center" headers="stat_0">1,809 (95%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Significantly distressed / unable to function / out of control / bizarre thoughts / significant change in functioning</td>
 <td class="gt_row gt_center" headers="stat_0">8 (0.4%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Mental Health Support Status</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;None / on wait list / non-compliant</td>
 <td class="gt_row gt_center" headers="stat_0">15 (0.8%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Not Applicable</td>
 <td class="gt_row gt_center" headers="stat_0">1,815 (95%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ongoing / well connected</td>
 <td class="gt_row gt_center" headers="stat_0">74 (3.9%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Some / not meeting needs</td>
 <td class="gt_row gt_center" headers="stat_0">4 (0.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Menstruation Started (Menarche)</td>
 <td class="gt_row gt_center" headers="stat_0">769 (40%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Age at Menarche (Years)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;9</td>
 <td class="gt_row gt_center" headers="stat_0">2 (0.3%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;9.5</td>
 <td class="gt_row gt_center" headers="stat_0">1 (0.1%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;10</td>
 <td class="gt_row gt_center" headers="stat_0">21 (2.7%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;11</td>
 <td class="gt_row gt_center" headers="stat_0">120 (16%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;12</td>
 <td class="gt_row gt_center" headers="stat_0">263 (34%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;13</td>
 <td class="gt_row gt_center" headers="stat_0">216 (28%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;14</td>
 <td class="gt_row gt_center" headers="stat_0">112 (15%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;15</td>
 <td class="gt_row gt_center" headers="stat_0">32 (4.2%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;16</td>
 <td class="gt_row gt_center" headers="stat_0">2 (0.3%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Knew About Menstruation Before First Period</td>
 <td class="gt_row gt_center" headers="stat_0">412 (54%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Source of Menstrual Knowledge</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Family</td>
 <td class="gt_row gt_center" headers="stat_0">214 (52%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Friends</td>
 <td class="gt_row gt_center" headers="stat_0">47 (11%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Media (TV, radio, etc.)</td>
 <td class="gt_row gt_center" headers="stat_0">3 (0.7%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Reading</td>
 <td class="gt_row gt_center" headers="stat_0">1 (0.2%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Schools</td>
 <td class="gt_row gt_center" headers="stat_0">148 (36%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Cloth/Towel</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">155 (8.1%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,757 (92%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Disposable Sanitary Pad</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">702 (37%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,210 (63%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Reusable Sanitary Pad</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">5 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,907 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Toilet Paper</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,912 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Cotton Wool</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">1 (&lt;0.1%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,911 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Mattress/Foam</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,912 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Underwear Alone</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">6 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,906 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Natural Material (Leaves/Sand/Grass)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">1 (&lt;0.1%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,911 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Period Underwear</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">2 (0.1%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,910 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Menstrual Cup</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,912 (100%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Menstrual Material: Tampon</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">3 (0.2%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,909 (100%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Washes and Reuses Menstrual Materials</td>
 <td class="gt_row gt_center" headers="stat_0">135 (18%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Material Changes Per Day (Heaviest Day)</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;1 time (wear until the next day)</td>
 <td class="gt_row gt_center" headers="stat_0">43 (5.6%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2 times (e.g., morning and evening)</td>
 <td class="gt_row gt_center" headers="stat_0">269 (35%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;3 times (e.g., morning, evening, and once during day)</td>
 <td class="gt_row gt_center" headers="stat_0">333 (43%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;4 times (e.g., morning, evening, and twice during day)</td>
 <td class="gt_row gt_center" headers="stat_0">104 (14%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;More than 4 times</td>
 <td class="gt_row gt_center" headers="stat_0">21 (2.7%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Frequency of Changing During Period</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Every day of my period</td>
 <td class="gt_row gt_center" headers="stat_0">610 (90%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Never/no days</td>
 <td class="gt_row gt_center" headers="stat_0">2 (0.3%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;One day</td>
 <td class="gt_row gt_center" headers="stat_0">17 (2.5%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Some days</td>
 <td class="gt_row gt_center" headers="stat_0">52 (7.6%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Primary Diet Type</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Healthy Food</td>
 <td class="gt_row gt_center" headers="stat_0">1,054 (55%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Junk Food</td>
 <td class="gt_row gt_center" headers="stat_0">858 (45%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Sports Participation: Never</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">144 (7.5%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,768 (92%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">Sports Participation: At School</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">1,725 (90%)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">187 (9.8%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">Sports Participation: Outside School</td>
 <td class="gt_row gt_center" headers="stat_0"><br>
 </td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Checked</td>
 <td class="gt_row gt_center" headers="stat_0">154 (8.1%)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unchecked</td>
 <td class="gt_row gt_center" headers="stat_0">1,758 (92%)</td>
 </tr>
 </tbody><tfoot>
-<tr class="even gt_footnotes">
+<tr class="odd gt_footnotes">
 <td colspan="2" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> Mean (SD); n (%)</td>
 </tr>
 </tfoot>
@@ -2754,23 +2832,23 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="disease-by-age-group-analysis">Disease by Age Group Analysis</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="qmmknlrtop" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qmmknlrtop table {
+<div id="zwtfhpltev" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zwtfhpltev table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qmmknlrtop thead, #qmmknlrtop tbody, #qmmknlrtop tfoot, #qmmknlrtop tr, #qmmknlrtop td, #qmmknlrtop th {
+#zwtfhpltev thead, #zwtfhpltev tbody, #zwtfhpltev tfoot, #zwtfhpltev tr, #zwtfhpltev td, #zwtfhpltev th {
   border-style: none;
 }
 
-#qmmknlrtop p {
+#zwtfhpltev p {
   margin: 0;
   padding: 0;
 }
 
-#qmmknlrtop .gt_table {
+#zwtfhpltev .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2796,12 +2874,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_caption {
+#zwtfhpltev .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qmmknlrtop .gt_title {
+#zwtfhpltev .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2813,7 +2891,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#qmmknlrtop .gt_subtitle {
+#zwtfhpltev .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2825,7 +2903,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#qmmknlrtop .gt_heading {
+#zwtfhpltev .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2837,13 +2915,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_bottom_border {
+#zwtfhpltev .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_col_headings {
+#zwtfhpltev .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2858,7 +2936,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_col_heading {
+#zwtfhpltev .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2878,7 +2956,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#qmmknlrtop .gt_column_spanner_outer {
+#zwtfhpltev .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2890,15 +2968,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#qmmknlrtop .gt_column_spanner_outer:first-child {
+#zwtfhpltev .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qmmknlrtop .gt_column_spanner_outer:last-child {
+#zwtfhpltev .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qmmknlrtop .gt_column_spanner {
+#zwtfhpltev .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2910,11 +2988,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#qmmknlrtop .gt_spanner_row {
+#zwtfhpltev .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qmmknlrtop .gt_group_heading {
+#zwtfhpltev .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2940,7 +3018,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#qmmknlrtop .gt_empty_group_heading {
+#zwtfhpltev .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2955,15 +3033,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#qmmknlrtop .gt_from_md > :first-child {
+#zwtfhpltev .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qmmknlrtop .gt_from_md > :last-child {
+#zwtfhpltev .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qmmknlrtop .gt_row {
+#zwtfhpltev .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2982,7 +3060,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#qmmknlrtop .gt_stub {
+#zwtfhpltev .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2995,7 +3073,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qmmknlrtop .gt_stub_row_group {
+#zwtfhpltev .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3009,15 +3087,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#qmmknlrtop .gt_row_group_first td {
+#zwtfhpltev .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qmmknlrtop .gt_row_group_first th {
+#zwtfhpltev .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qmmknlrtop .gt_summary_row {
+#zwtfhpltev .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3027,16 +3105,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qmmknlrtop .gt_first_summary_row {
+#zwtfhpltev .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_first_summary_row.thick {
+#zwtfhpltev .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qmmknlrtop .gt_last_summary_row {
+#zwtfhpltev .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3046,7 +3124,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_grand_summary_row {
+#zwtfhpltev .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3056,7 +3134,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qmmknlrtop .gt_first_grand_summary_row {
+#zwtfhpltev .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3066,7 +3144,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_last_grand_summary_row_top {
+#zwtfhpltev .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3076,11 +3154,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_striped {
+#zwtfhpltev .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qmmknlrtop .gt_table_body {
+#zwtfhpltev .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3089,7 +3167,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_footnotes {
+#zwtfhpltev .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3103,7 +3181,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_footnote {
+#zwtfhpltev .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3112,7 +3190,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qmmknlrtop .gt_sourcenotes {
+#zwtfhpltev .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3126,7 +3204,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qmmknlrtop .gt_sourcenote {
+#zwtfhpltev .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3134,72 +3212,72 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qmmknlrtop .gt_left {
+#zwtfhpltev .gt_left {
   text-align: left;
 }
 
-#qmmknlrtop .gt_center {
+#zwtfhpltev .gt_center {
   text-align: center;
 }
 
-#qmmknlrtop .gt_right {
+#zwtfhpltev .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qmmknlrtop .gt_font_normal {
+#zwtfhpltev .gt_font_normal {
   font-weight: normal;
 }
 
-#qmmknlrtop .gt_font_bold {
+#zwtfhpltev .gt_font_bold {
   font-weight: bold;
 }
 
-#qmmknlrtop .gt_font_italic {
+#zwtfhpltev .gt_font_italic {
   font-style: italic;
 }
 
-#qmmknlrtop .gt_super {
+#zwtfhpltev .gt_super {
   font-size: 65%;
 }
 
-#qmmknlrtop .gt_footnote_marks {
+#zwtfhpltev .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qmmknlrtop .gt_asterisk {
+#zwtfhpltev .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qmmknlrtop .gt_indent_1 {
+#zwtfhpltev .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qmmknlrtop .gt_indent_2 {
+#zwtfhpltev .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qmmknlrtop .gt_indent_3 {
+#zwtfhpltev .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qmmknlrtop .gt_indent_4 {
+#zwtfhpltev .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qmmknlrtop .gt_indent_5 {
+#zwtfhpltev .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qmmknlrtop .katex-display {
+#zwtfhpltev .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qmmknlrtop div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#zwtfhpltev div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3441,7 +3519,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
 </td>
 <td class="gt_row gt_center" headers="ci_stat_3"><br>
 </td>
-<td class="gt_row gt_center" headers="p.value">0.056</td>
+<td class="gt_row gt_center" headers="p.value">0.051</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Don't know</td>
@@ -3637,7 +3715,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
 </td>
 <td class="gt_row gt_center" headers="ci_stat_3"><br>
 </td>
-<td class="gt_row gt_center" headers="p.value">0.047</td>
+<td class="gt_row gt_center" headers="p.value">0.046</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Don't know</td>
@@ -3980,7 +4058,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
 </td>
 <td class="gt_row gt_center" headers="ci_stat_3"><br>
 </td>
-<td class="gt_row gt_center" headers="p.value">0.5</td>
+<td class="gt_row gt_center" headers="p.value">0.4</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Don't know</td>
@@ -4078,7 +4156,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
 </td>
 <td class="gt_row gt_center" headers="ci_stat_3"><br>
 </td>
-<td class="gt_row gt_center" headers="p.value">0.013</td>
+<td class="gt_row gt_center" headers="p.value">0.015</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Don't know</td>
@@ -4298,14 +4376,52 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
 <td class="gt_row gt_center" headers="p.value"><br>
 </td>
 </tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Visual Impairment (Either Eye)</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Impaired</td>
+<td class="gt_row gt_center" headers="stat_1">12 (21%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">12%, 34%</td>
+<td class="gt_row gt_center" headers="stat_2">58 (7.9%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">6.1%, 10%</td>
+<td class="gt_row gt_center" headers="stat_3">19 (1.7%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">1.1%, 2.7%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
+<td class="gt_row gt_center" headers="stat_1">46 (79%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">66%, 88%</td>
+<td class="gt_row gt_center" headers="stat_2">677 (92%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">90%, 94%</td>
+<td class="gt_row gt_center" headers="stat_3">1,085 (98%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">97%, 99%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
 </tbody><tfoot>
-<tr class="odd gt_footnotes">
+<tr class="even gt_footnotes">
 <td colspan="8" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> 11 participants are excluded from this age-stratified table because their age falls outside the 3-18 year range used for stratification (1 participant’s age was not recorded; 1 was aged 1 year; 9 were aged 19-20 years). Overall study N = 1,912.</td>
 </tr>
-<tr class="even gt_footnotes">
+<tr class="odd gt_footnotes">
 <td colspan="8" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>2</sup></span> Fisher’s exact test; Pearson’s Chi-squared test</td>
 </tr>
-<tr class="odd gt_sourcenotes">
+<tr class="even gt_sourcenotes">
 <td colspan="8" class="gt_sourcenote">Abbreviation: CI = Confidence Interval</td>
 </tr>
 </tfoot>
@@ -4320,23 +4436,23 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
 <h2 class="anchored" data-anchor-id="uti-status-by-age-group-analysis">UTI Status by Age Group Analysis</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="wanywsskes" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wanywsskes table {
+<div id="cquwkwxgqi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cquwkwxgqi table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wanywsskes thead, #wanywsskes tbody, #wanywsskes tfoot, #wanywsskes tr, #wanywsskes td, #wanywsskes th {
+#cquwkwxgqi thead, #cquwkwxgqi tbody, #cquwkwxgqi tfoot, #cquwkwxgqi tr, #cquwkwxgqi td, #cquwkwxgqi th {
   border-style: none;
 }
 
-#wanywsskes p {
+#cquwkwxgqi p {
   margin: 0;
   padding: 0;
 }
 
-#wanywsskes .gt_table {
+#cquwkwxgqi .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -4362,12 +4478,12 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-left-color: #D3D3D3;
 }
 
-#wanywsskes .gt_caption {
+#cquwkwxgqi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wanywsskes .gt_title {
+#cquwkwxgqi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -4379,7 +4495,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-bottom-width: 0;
 }
 
-#wanywsskes .gt_subtitle {
+#cquwkwxgqi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -4391,7 +4507,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-top-width: 0;
 }
 
-#wanywsskes .gt_heading {
+#cquwkwxgqi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -4403,13 +4519,13 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-right-color: #D3D3D3;
 }
 
-#wanywsskes .gt_bottom_border {
+#cquwkwxgqi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wanywsskes .gt_col_headings {
+#cquwkwxgqi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4424,7 +4540,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-right-color: #D3D3D3;
 }
 
-#wanywsskes .gt_col_heading {
+#cquwkwxgqi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4444,7 +4560,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   overflow-x: hidden;
 }
 
-#wanywsskes .gt_column_spanner_outer {
+#cquwkwxgqi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4456,15 +4572,15 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   padding-right: 4px;
 }
 
-#wanywsskes .gt_column_spanner_outer:first-child {
+#cquwkwxgqi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wanywsskes .gt_column_spanner_outer:last-child {
+#cquwkwxgqi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wanywsskes .gt_column_spanner {
+#cquwkwxgqi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4476,11 +4592,11 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   width: 100%;
 }
 
-#wanywsskes .gt_spanner_row {
+#cquwkwxgqi .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wanywsskes .gt_group_heading {
+#cquwkwxgqi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4506,7 +4622,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   text-align: left;
 }
 
-#wanywsskes .gt_empty_group_heading {
+#cquwkwxgqi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4521,15 +4637,15 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   vertical-align: middle;
 }
 
-#wanywsskes .gt_from_md > :first-child {
+#cquwkwxgqi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wanywsskes .gt_from_md > :last-child {
+#cquwkwxgqi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wanywsskes .gt_row {
+#cquwkwxgqi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4548,7 +4664,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   overflow-x: hidden;
 }
 
-#wanywsskes .gt_stub {
+#cquwkwxgqi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4561,7 +4677,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   padding-right: 5px;
 }
 
-#wanywsskes .gt_stub_row_group {
+#cquwkwxgqi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4575,15 +4691,15 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   vertical-align: top;
 }
 
-#wanywsskes .gt_row_group_first td {
+#cquwkwxgqi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wanywsskes .gt_row_group_first th {
+#cquwkwxgqi .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wanywsskes .gt_summary_row {
+#cquwkwxgqi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4593,16 +4709,16 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   padding-right: 5px;
 }
 
-#wanywsskes .gt_first_summary_row {
+#cquwkwxgqi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wanywsskes .gt_first_summary_row.thick {
+#cquwkwxgqi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wanywsskes .gt_last_summary_row {
+#cquwkwxgqi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4612,7 +4728,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-bottom-color: #D3D3D3;
 }
 
-#wanywsskes .gt_grand_summary_row {
+#cquwkwxgqi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4622,7 +4738,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   padding-right: 5px;
 }
 
-#wanywsskes .gt_first_grand_summary_row {
+#cquwkwxgqi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4632,7 +4748,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-top-color: #D3D3D3;
 }
 
-#wanywsskes .gt_last_grand_summary_row_top {
+#cquwkwxgqi .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4642,11 +4758,11 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-bottom-color: #D3D3D3;
 }
 
-#wanywsskes .gt_striped {
+#cquwkwxgqi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wanywsskes .gt_table_body {
+#cquwkwxgqi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4655,7 +4771,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-bottom-color: #D3D3D3;
 }
 
-#wanywsskes .gt_footnotes {
+#cquwkwxgqi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4669,7 +4785,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-right-color: #D3D3D3;
 }
 
-#wanywsskes .gt_footnote {
+#cquwkwxgqi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -4678,7 +4794,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   padding-right: 5px;
 }
 
-#wanywsskes .gt_sourcenotes {
+#cquwkwxgqi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4692,7 +4808,7 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   border-right-color: #D3D3D3;
 }
 
-#wanywsskes .gt_sourcenote {
+#cquwkwxgqi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4700,72 +4816,72 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
   padding-right: 5px;
 }
 
-#wanywsskes .gt_left {
+#cquwkwxgqi .gt_left {
   text-align: left;
 }
 
-#wanywsskes .gt_center {
+#cquwkwxgqi .gt_center {
   text-align: center;
 }
 
-#wanywsskes .gt_right {
+#cquwkwxgqi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wanywsskes .gt_font_normal {
+#cquwkwxgqi .gt_font_normal {
   font-weight: normal;
 }
 
-#wanywsskes .gt_font_bold {
+#cquwkwxgqi .gt_font_bold {
   font-weight: bold;
 }
 
-#wanywsskes .gt_font_italic {
+#cquwkwxgqi .gt_font_italic {
   font-style: italic;
 }
 
-#wanywsskes .gt_super {
+#cquwkwxgqi .gt_super {
   font-size: 65%;
 }
 
-#wanywsskes .gt_footnote_marks {
+#cquwkwxgqi .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wanywsskes .gt_asterisk {
+#cquwkwxgqi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wanywsskes .gt_indent_1 {
+#cquwkwxgqi .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wanywsskes .gt_indent_2 {
+#cquwkwxgqi .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wanywsskes .gt_indent_3 {
+#cquwkwxgqi .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wanywsskes .gt_indent_4 {
+#cquwkwxgqi .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wanywsskes .gt_indent_5 {
+#cquwkwxgqi .gt_indent_5 {
   text-indent: 25px;
 }
 
-#wanywsskes .katex-display {
+#cquwkwxgqi .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#wanywsskes div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#cquwkwxgqi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -4849,6 +4965,1009 @@ N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:it
 </tbody><tfoot>
 <tr class="odd gt_footnotes">
 <td colspan="8" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> n (%)</td>
+</tr>
+<tr class="even gt_footnotes">
+<td colspan="8" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>2</sup></span> Fisher’s exact test</td>
+</tr>
+<tr class="odd gt_sourcenotes">
+<td colspan="8" class="gt_sourcenote">Abbreviation: CI = Confidence Interval</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="psychosocial-heads-ed-screening-by-age-group-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="psychosocial-heads-ed-screening-by-age-group-analysis">Psychosocial (HEADS-ED) Screening by Age Group Analysis</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="qnvaapipiz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qnvaapipiz table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qnvaapipiz thead, #qnvaapipiz tbody, #qnvaapipiz tfoot, #qnvaapipiz tr, #qnvaapipiz td, #qnvaapipiz th {
+  border-style: none;
+}
+
+#qnvaapipiz p {
+  margin: 0;
+  padding: 0;
+}
+
+#qnvaapipiz .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qnvaapipiz .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qnvaapipiz .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qnvaapipiz .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qnvaapipiz .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qnvaapipiz .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qnvaapipiz .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qnvaapipiz .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qnvaapipiz .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qnvaapipiz .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qnvaapipiz .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qnvaapipiz .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qnvaapipiz .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qnvaapipiz .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qnvaapipiz .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qnvaapipiz .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qnvaapipiz .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qnvaapipiz .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qnvaapipiz .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qnvaapipiz .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qnvaapipiz .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qnvaapipiz .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qnvaapipiz .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qnvaapipiz .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qnvaapipiz .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qnvaapipiz .gt_left {
+  text-align: left;
+}
+
+#qnvaapipiz .gt_center {
+  text-align: center;
+}
+
+#qnvaapipiz .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qnvaapipiz .gt_font_normal {
+  font-weight: normal;
+}
+
+#qnvaapipiz .gt_font_bold {
+  font-weight: bold;
+}
+
+#qnvaapipiz .gt_font_italic {
+  font-style: italic;
+}
+
+#qnvaapipiz .gt_super {
+  font-size: 65%;
+}
+
+#qnvaapipiz .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qnvaapipiz .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qnvaapipiz .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qnvaapipiz .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qnvaapipiz .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qnvaapipiz .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qnvaapipiz .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#qnvaapipiz .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#qnvaapipiz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>3–5</strong><br>
+N = 60<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="ci_stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>95% CI</strong></th>
+<th id="stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>6–11</strong><br>
+N = 735<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="ci_stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>95% CI</strong></th>
+<th id="stat_3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>12–18</strong><br>
+N = 1,106<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+<th id="ci_stat_3" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>95% CI</strong></th>
+<th id="p.value" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>p-value</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>2</sup></span></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Speech Delay</td>
+<td class="gt_row gt_center" headers="stat_1">3 (5.0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">1.3%, 15%</td>
+<td class="gt_row gt_center" headers="stat_2">29 (3.9%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">2.7%, 5.7%</td>
+<td class="gt_row gt_center" headers="stat_3">25 (2.3%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">1.5%, 3.4%</td>
+<td class="gt_row gt_center" headers="p.value">0.051</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Autism/Developmental Disability</td>
+<td class="gt_row gt_center" headers="stat_1">1 (1.7%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.09%, 10%</td>
+<td class="gt_row gt_center" headers="stat_2">6 (0.8%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.33%, 1.9%</td>
+<td class="gt_row gt_center" headers="stat_3">2 (0.2%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.03%, 0.73%</td>
+<td class="gt_row gt_center" headers="p.value">0.055</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Prenatal Alcohol Exposure (FASD)</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">6 (0.8%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.33%, 1.9%</td>
+<td class="gt_row gt_center" headers="stat_3">5 (0.5%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.17%, 1.1%</td>
+<td class="gt_row gt_center" headers="p.value">0.6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Family Relationships</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">0.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Chaotic / Dysfunctional</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">3 (0.4%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.11%, 1.3%</td>
+<td class="gt_row gt_center" headers="stat_3">4 (0.4%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.12%, 0.99%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Conflicts</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">23 (3.1%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">2.0%, 4.7%</td>
+<td class="gt_row gt_center" headers="stat_3">37 (3.3%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">2.4%, 4.6%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Supportive</td>
+<td class="gt_row gt_center" headers="stat_1">60 (100%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">93%, 100%</td>
+<td class="gt_row gt_center" headers="stat_2">707 (96%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">95%, 98%</td>
+<td class="gt_row gt_center" headers="stat_3">1,064 (96%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">95%, 97%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">School Attendance Pattern</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">0.12</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Failing / not attending</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">2 (0.3%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.05%, 1.1%</td>
+<td class="gt_row gt_center" headers="stat_3">7 (0.6%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.28%, 1.4%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Grades dropping / or absenteeism</td>
+<td class="gt_row gt_center" headers="stat_1">1 (1.7%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.09%, 10%</td>
+<td class="gt_row gt_center" headers="stat_2">9 (1.2%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.60%, 2.4%</td>
+<td class="gt_row gt_center" headers="stat_3">32 (2.9%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">2.0%, 4.1%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;On track</td>
+<td class="gt_row gt_center" headers="stat_1">59 (98%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">90%, 100%</td>
+<td class="gt_row gt_center" headers="stat_2">722 (98%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">97%, 99%</td>
+<td class="gt_row gt_center" headers="stat_3">1,066 (96%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">95%, 97%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Academic Performance (Grades)</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">0.14</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Failing / not attending</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">4 (0.5%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.17%, 1.5%</td>
+<td class="gt_row gt_center" headers="stat_3">18 (1.6%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">1.0%, 2.6%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Grades dropping / or absenteeism</td>
+<td class="gt_row gt_center" headers="stat_1">3 (5.0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">1.3%, 15%</td>
+<td class="gt_row gt_center" headers="stat_2">32 (4.4%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">3.0%, 6.2%</td>
+<td class="gt_row gt_center" headers="stat_3">64 (5.8%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">4.5%, 7.4%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;On track</td>
+<td class="gt_row gt_center" headers="stat_1">57 (95%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">85%, 99%</td>
+<td class="gt_row gt_center" headers="stat_2">698 (95%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">93%, 96%</td>
+<td class="gt_row gt_center" headers="stat_3">1,023 (93%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">91%, 94%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Peer Relationships</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">0.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Increasingly to fully withdrawn / significant peer conflicts</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">4 (0.5%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.17%, 1.5%</td>
+<td class="gt_row gt_center" headers="stat_3">4 (0.4%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.12%, 0.99%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal</td>
+<td class="gt_row gt_center" headers="stat_1">60 (100%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">93%, 100%</td>
+<td class="gt_row gt_center" headers="stat_2">717 (98%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">96%, 99%</td>
+<td class="gt_row gt_center" headers="stat_3">1,089 (99%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">98%, 99%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Reduction in activities / increased peer conflicts</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">13 (1.8%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.99%, 3.1%</td>
+<td class="gt_row gt_center" headers="stat_3">12 (1.1%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.59%, 1.9%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Activities for Fun / Bullying</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Increasingly to fully withdrawn / significant peer conflicts</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">2 (0.3%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.05%, 1.1%</td>
+<td class="gt_row gt_center" headers="stat_3">1 (&lt;0.1%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.00%, 0.59%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Normal Activities</td>
+<td class="gt_row gt_center" headers="stat_1">60 (100%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">93%, 100%</td>
+<td class="gt_row gt_center" headers="stat_2">709 (97%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">95%, 98%</td>
+<td class="gt_row gt_center" headers="stat_3">1,095 (99%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">98%, 100%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Reduction in activities / increased peer conflicts</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">23 (3.1%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">2.0%, 4.7%</td>
+<td class="gt_row gt_center" headers="stat_3">8 (0.7%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.34%, 1.5%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Drug/Alcohol Use Frequency</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Frequent / daily</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.00%, 0.65%</td>
+<td class="gt_row gt_center" headers="stat_3">2 (0.2%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.03%, 0.73%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No or infrequent</td>
+<td class="gt_row gt_center" headers="stat_1">3 (5.0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">1.3%, 15%</td>
+<td class="gt_row gt_center" headers="stat_2">13 (1.8%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.99%, 3.1%</td>
+<td class="gt_row gt_center" headers="stat_3">106 (9.6%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">8.0%, 12%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Not Applicable</td>
+<td class="gt_row gt_center" headers="stat_1">57 (95%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">85%, 99%</td>
+<td class="gt_row gt_center" headers="stat_2">721 (98%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">97%, 99%</td>
+<td class="gt_row gt_center" headers="stat_3">992 (90%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">88%, 91%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Occasional</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.00%, 0.65%</td>
+<td class="gt_row gt_center" headers="stat_3">5 (0.5%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.17%, 1.1%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Suicidal Ideation Level</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ideation</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">2 (0.3%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.05%, 1.1%</td>
+<td class="gt_row gt_center" headers="stat_3">12 (1.1%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.59%, 1.9%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No thoughts</td>
+<td class="gt_row gt_center" headers="stat_1">3 (5.0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">1.3%, 15%</td>
+<td class="gt_row gt_center" headers="stat_2">16 (2.2%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">1.3%, 3.6%</td>
+<td class="gt_row gt_center" headers="stat_3">435 (39%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">36%, 42%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Not Applicable</td>
+<td class="gt_row gt_center" headers="stat_1">57 (95%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">85%, 99%</td>
+<td class="gt_row gt_center" headers="stat_2">713 (97%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">96%, 98%</td>
+<td class="gt_row gt_center" headers="stat_3">654 (59%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">56%, 62%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Plan or gesture</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">1 (0.1%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.01%, 0.88%</td>
+<td class="gt_row gt_center" headers="stat_3">4 (0.4%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.12%, 0.99%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Suicidal Thoughts Changed Recently</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
+<td class="gt_row gt_center" headers="stat_1">2 (3.3%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.58%, 13%</td>
+<td class="gt_row gt_center" headers="stat_2">7 (1.0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.42%, 2.0%</td>
+<td class="gt_row gt_center" headers="stat_3">147 (13%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">11%, 15%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Not Applicable</td>
+<td class="gt_row gt_center" headers="stat_1">57 (95%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">85%, 99%</td>
+<td class="gt_row gt_center" headers="stat_2">726 (99%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">98%, 100%</td>
+<td class="gt_row gt_center" headers="stat_3">954 (86%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">84%, 88%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Yes</td>
+<td class="gt_row gt_center" headers="stat_1">1 (1.7%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.09%, 10%</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.00%, 0.65%</td>
+<td class="gt_row gt_center" headers="stat_3">4 (0.4%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.12%, 0.99%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Mental Health Support Status</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="ci_stat_3"><br>
+</td>
+<td class="gt_row gt_center" headers="p.value">&lt;0.001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;None / on wait list / non-compliant</td>
+<td class="gt_row gt_center" headers="stat_1">1 (1.7%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.09%, 10%</td>
+<td class="gt_row gt_center" headers="stat_2">3 (0.4%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.11%, 1.3%</td>
+<td class="gt_row gt_center" headers="stat_3">10 (0.9%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.46%, 1.7%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Not Applicable</td>
+<td class="gt_row gt_center" headers="stat_1">59 (98%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">90%, 100%</td>
+<td class="gt_row gt_center" headers="stat_2">722 (98%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">97%, 99%</td>
+<td class="gt_row gt_center" headers="stat_3">1,025 (93%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">91%, 94%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ongoing / well connected</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">7 (1.0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.42%, 2.0%</td>
+<td class="gt_row gt_center" headers="stat_3">67 (6.1%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">4.8%, 7.7%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Some / not meeting needs</td>
+<td class="gt_row gt_center" headers="stat_1">0 (0%)</td>
+<td class="gt_row gt_center" headers="ci_stat_1">0.00%, 7.5%</td>
+<td class="gt_row gt_center" headers="stat_2">1 (0.1%)</td>
+<td class="gt_row gt_center" headers="ci_stat_2">0.01%, 0.88%</td>
+<td class="gt_row gt_center" headers="stat_3">3 (0.3%)</td>
+<td class="gt_row gt_center" headers="ci_stat_3">0.07%, 0.86%</td>
+<td class="gt_row gt_center" headers="p.value"><br>
+</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd gt_footnotes">
+<td colspan="8" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> 11 participants are excluded from this age-stratified table because their age falls outside the 3-18 year range used for stratification (1 participant’s age was not recorded; 1 was aged 1 year; 9 were aged 19-20 years). Overall study N = 1,912. Three additional psychosocial variables (mood, intrusive thoughts, and trouble with parents/police/school) are not included in this table pending a data-mapping check with the study team - their recorded answer categories do not match the questions asked.</td>
 </tr>
 <tr class="even gt_footnotes">
 <td colspan="8" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>2</sup></span> Fisher’s exact test</td>
